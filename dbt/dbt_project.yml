@@ -9,10 +9,11 @@ macro-paths: ["macros"]
 
 models:
   ilo:
-    +schema: ilo
+
     clean:
-      +schema: clean
+      +schema: clean_grp6
       +materialized: table
+
     mart:
-      +schema: mart
+      +schema: mart_grp6
       +materialized: view
