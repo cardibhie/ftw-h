@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: raw_grp6
+    tables:
+      - name: chinook___artists
+      - name: chinook___albums
+      - name: raw_grp6_ilostat_labor_force
