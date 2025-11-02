@@ -1,6 +1,6 @@
 {{ config(
     materialized="table",
-    schema="clean"
+    schema="clean_grp6"
 ) }}
 
 with source as (
@@ -11,7 +11,11 @@ with source as (
         cast(sex.label as varchar) as sex_label,
         cast(classif1.label as varchar) as educ_level_raw,
         cast(classif2.label as varchar) as classif2_label,
-        cast(replace(time, ',', '') as integer) as year,
+        
+        -- THIS IS THE FIX:
+        cast(time as integer) as year,
+        -- END OF FIX
+
         cast(obs_value as float) as obs_value,
         cast(coalesce(nullif(obs_status.label, ''), 'Not Applicable') as varchar) as obs_status_label,
         cast(note_classif.label as varchar) as note_classif_label,
