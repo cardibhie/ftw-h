@@ -1,0 +1,22 @@
+clickhouse_ftw:
+  target: local
+  outputs:
+    local:
+      type: clickhouse
+      host: clickhouse
+      port: 8123
+      user: ftw_grp6
+      password: Mewtwo!150#FTW
+      schema: mart
+      threads: 4
+      secure: false
+
+    remote:
+      type: clickhouse
+      host: 54.87.106.52
+      port: 8123
+      user: ftw_grp6
+      password: Mewtwo!150#FTW
+      schema: mart
+      threads: 4
+      secure: false
