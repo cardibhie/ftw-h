@@ -4,7 +4,10 @@ sources:
   - name: raw_grp6
     schema: raw_grp6
     tables:
-      - name: raw_grp6___raw_lfs_may_2024_grp6
+      - name: raw_grp6_lfs2019
+      - name: raw_grp6_lfs2020
+      - name: raw_grp6_lfs2021
+      - name: raw_grp6_lfs2023
 
 
       
