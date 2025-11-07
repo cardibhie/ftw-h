@@ -1,20 +1,20 @@
-# 📝 Beginner Data Engineer Documentation & Presentation Guide
-
-This guide is for documenting and presenting your group’s **dimensional modeling exercise**.  
-Follow the structure below, fill in your team’s work, and use it as both internal documentation and a final presentation outline.  
+# 📝 FTW-H Data Engineer Documentation & Presentation
 
 ---
 
 ## 1. Project Overview
 
 - **Dataset Used:**  
-  *(Briefly describe the dataset and domain — e.g., Chinook music store, OULAD education dataset, or IMDb entertainment dataset.)*  
+  *2022 Philippines Demographic and Health Survey*
+  *2022 International Labor Organization Statistics*
+  *2019-2023 Philippine Statistics Authority Labor Force Survey*
+  *[Women's Employment and Health in the Philippines Survey](https://docs.google.com/forms/d/e/1FAIpQLScaQxn7jTkP45K8JQuW7PI9zMjMfQwjUH18SS35z5HtLvf8sA/viewform)*  
 
-- **Goal of the Exercise:**  
+- **Goal of the Capstone Project:**  
   *(What was the objective? Example: transform OLTP schema into dimensional star schema for analytics.)*  
 
 - **Team Setup:**  
-  *(State if you worked individually, as a group, or both. Mention collaboration style.)*  
+  FTW-H held multiple meetings with Ms. Chelsea and Ms. Belle to keep up with progress and ask for feedback. Data engineer scholars would set Slack huddles regularly to maintain communcations and discuss tasks. The DE scholars decided to assign tasks to each member to fast-track the completion of the data pipeline.
 
 - **Environment Setup:**  
   *(Describe your environment — local vs remote, individual vs shared instances. Example: Docker containers on a shared VM + local laptops.)*  
@@ -29,8 +29,7 @@ Follow the structure below, fill in your team’s work, and use it as both inter
 - **Tools Used:**  
   - Ingestion: `dlt`  
   - Modeling: `dbt`  
-  - Visualization: `Metabase`  
-  *(Add others if used.)*  
+  - Visualization: `Tableau`  
 
 - **Medallion Architecture Application:**  
   - **Bronze (Raw):** Initial ingestion of source data  
@@ -47,11 +46,11 @@ Follow the structure below, fill in your team’s work, and use it as both inter
   *(Describe how the original tables were structured — 3NF, relationships, etc.)*  
 
 - **Star Schema Design:**  
-  - Fact Tables: *(e.g., FactSales, FactAssessment, FactRatings)*  
-  - Dimension Tables: *(e.g., Customer, Date, Genre, Student, Demographics, Title, Person)*  
+  - Fact Tables: *fact_death_causes, fact_health_insurance, fact_ilostat_employment, fact_labor_force*  
+  - Dimension Tables: *Sex, Age Group, Country, Region, Area Type, Occupation, Marital Status, Education, Death Cause, Death Date*  
 
 - **Challenges / Tradeoffs:**  
-  *(E.g., handling missing data, many-to-many joins, exploding arrays, performance considerations.)*  
+  Raw data was sourced from multiple, disconnected, public datasets each with its own format and structure.   
 
 ---
 
@@ -103,17 +102,3 @@ Follow the structure below, fill in your team’s work, and use it as both inter
 
 - **Generalization:**  
   *(How this workflow could be applied to other datasets or business domains.)*  
-
----
-
-## 📢 Presentation Tips
-
-- Keep it **5–10 minutes**, like a project walkthrough.  
-- Use **diagrams, screenshots, and SQL snippets**.  
-- Focus on both **technical process** and **business insights**.  
-- End with your **key learnings and future improvements**.  
-- For other documentation tips. Read [this](TECHNICAL-DOCS.md).
-
----
-
-✅ By filling this template, your group will produce a professional-style project guide **just like real data engineers** — clear, structured, and insight-driven.
