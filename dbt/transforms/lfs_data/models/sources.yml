@@ -7,7 +7,5 @@ sources:
       - name: raw_grp6_lfs2019
       - name: raw_grp6_lfs2020
       - name: raw_grp6_lfs2021
+      - name: raw_grp6_lfs2022
       - name: raw_grp6_lfs2023
-
-
-      
