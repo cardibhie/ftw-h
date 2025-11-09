@@ -1,0 +1,13 @@
+lfs_data:
+  target: remote
+  outputs:
+    remote:
+      type: clickhouse
+      schema: raw_grp6        # must match database
+      database: raw_grp6
+      host: 54.87.106.52
+      port: 8123
+      user: ftw_grp6
+      password: Mewtwo!150#FTW
+      secure: false
+      threads: 1

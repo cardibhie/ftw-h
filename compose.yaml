@@ -166,6 +166,7 @@ services:
     container_name: dbt
     working_dir: /workdir
     volumes:
+      - ./transforms/lfs_data:/workdir
       - ./dbt:/workdir
 #      - ./dbt/profiles.yml:/root/.dbt/profiles.yml:ro
     environment:
@@ -184,6 +185,7 @@ services:
     command: dbt run
     restart: "no"
     profiles: ["jobs"]
+
 
 volumes:
   clickhouse_data:

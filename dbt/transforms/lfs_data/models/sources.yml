@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_grp6
+    schema: raw_grp6
+    tables:
+      - name: raw_grp6_lfs2019
+      - name: raw_grp6_lfs2020
+      - name: raw_grp6_lfs2021
+      - name: raw_grp6_lfs2022
+      - name: raw_grp6_lfs2023
